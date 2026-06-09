@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maid Service Application</title>
+  <link rel="stylesheet" href="maid-service.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">Saharo Hiring</div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Maid Service</h1>
+      <p>
+        Fill this form if you can do multiple house works like cleaning, cooking, and helping in daily tasks.
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-box">
+      <h2>Apply for Maid Service Work</h2>
+      <p class="form-note">
+        Please fill simple details below.
+      </p>
+
+      <form action="https://formspree.io/f/mdapnwra" method="POST">
+
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="Full Name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" name="Phone Number" placeholder="Enter your phone number" required />
+        </div>
+
+        <div class="form-group">
+          <label>Your Age</label>
+          <input type="number" name="Age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="form-group">
+          <label>City / Area</label>
+          <input type="text" name="City / Area" placeholder="Enter your city or area" required />
+        </div>
+
+        <div class="form-group">
+          <label>How many years of experience?</label>
+          <input type="text" name="Experience" placeholder="Example: 2 years, 5 years" required />
+        </div>
+
+        <div class="form-group">
+          <label>What work are you expert in?</label>
+          <textarea name="Expert In" rows="4" placeholder="Example: cleaning, cooking, babysitting, elderly care"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>What work can you do?</label>
+          <textarea name="Work You Can Do" rows="4" placeholder="Example: utensils, sweeping, cooking, baby care, elder care"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Can you do cleaning work?</label>
+          <select name="Cleaning" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Can you cook food?</label>
+          <select name="Cooking" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Can you take care of children?</label>
+          <select name="Babysitting" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Can you take care of elderly or patients?</label>
+          <select name="Care Taking" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Which shift can you do?</label>
+          <select name="Shift" required>
+            <option value="">Select shift</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+            <option value="Full Day">Full Day</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Full time or part time?</label>
+          <select name="Work Type" required>
+            <option value="">Select work type</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Can you stay with family if needed?</label>
+          <select name="Stay Option" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Languages you can speak</label>
+          <input type="text" name="Languages" placeholder="Example: Hindi, Gujarati, Marathi" />
+        </div>
+
+        <div class="form-group">
+          <label>Anything more you want to tell?</label>
+          <textarea name="More Details" rows="4" placeholder="Write here"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Form</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

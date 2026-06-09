@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japa Care Application</title>
+  <link rel="stylesheet" href="japa.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">Saharo Hiring</div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Japa Care</h1>
+      <p>
+        Fill this form if you have experience in baby care and mother care after delivery.
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form-box">
+      <h2>Apply for Japa Care Work</h2>
+      <p class="form-note">
+        Please fill simple details below.
+      </p>
+
+      <form action="https://formspree.io/f/mdapnwyg" method="POST">
+        
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="Full Name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Your Age</label>
+          <input type="number" id="age" name="Age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="form-group">
+          <label for="city">City / Area</label>
+          <input type="text" id="city" name="City / Area" placeholder="Enter your city or area" required />
+        </div>
+
+        <div class="form-group">
+          <label for="experience">How many years of experience do you have?</label>
+          <input type="text" id="experience" name="Experience" placeholder="Example: 2 years" required />
+        </div>
+
+        <div class="form-group">
+          <label for="expert">What are you expert in?</label>
+          <textarea id="expert" name="Expert In" rows="4" placeholder="Example: newborn baby care, mother care, massage, feeding support"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cando">What work can you do?</label>
+          <textarea id="cando" name="What Work Can You Do" rows="4" placeholder="Example: baby care, mother help, cleaning baby things, basic cooking"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="shift">Which shift can you do?</label>
+          <select id="shift" name="Shift" required>
+            <option value="">Select shift</option>
+            <option value="Day">Day</option>
+            <option value="Night">Night</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Can you do full time or part time?</label>
+          <select id="time" name="Work Type" required>
+            <option value="">Select work type</option>
+            <option value="Full Time">Full Time</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="stay">Can you stay at home with family if needed?</label>
+          <select id="stay" name="Stay Option" required>
+            <option value="">Select option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="language">Which language can you speak?</label>
+          <input type="text" id="language" name="Languages" placeholder="Example: Hindi, Gujarati" />
+        </div>
+
+        <div class="form-group">
+          <label for="about">Anything more you want to tell?</label>
+          <textarea id="about" name="More Details" rows="4" placeholder="Write here"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Form</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
